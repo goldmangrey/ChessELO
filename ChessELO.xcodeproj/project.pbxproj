@@ -13,6 +13,11 @@
 		1EFA409D2A2B90A7008CAA12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFA409B2A2B90A7008CAA12 /* Main.storyboard */; };
 		1EFA409F2A2B90A9008CAA12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EFA409E2A2B90A9008CAA12 /* Assets.xcassets */; };
 		1EFA40A22A2B90A9008CAA12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFA40A02A2B90A9008CAA12 /* LaunchScreen.storyboard */; };
+		1EFA40AA2A2B90D0008CAA12 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA40A92A2B90D0008CAA12 /* Board.swift */; };
+		1EFA40AC2A2B90E6008CAA12 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA40AB2A2B90E6008CAA12 /* Game.swift */; };
+		1EFA40AE2A2B90FD008CAA12 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA40AD2A2B90FD008CAA12 /* BoardView.swift */; };
+		1EFA40B02A2B9118008CAA12 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA40AF2A2B9118008CAA12 /* UIView.swift */; };
+		1EFA40B22A2B9A99008CAA12 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA40B12A2B9A99008CAA12 /* AboutAppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		1EFA409E2A2B90A9008CAA12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EFA40A12A2B90A9008CAA12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EFA40A32A2B90A9008CAA12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EFA40A92A2B90D0008CAA12 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		1EFA40AB2A2B90E6008CAA12 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		1EFA40AD2A2B90FD008CAA12 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		1EFA40AF2A2B9118008CAA12 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		1EFA40B12A2B9A99008CAA12 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +69,15 @@
 				1EFA40952A2B90A7008CAA12 /* AppDelegate.swift */,
 				1EFA40972A2B90A7008CAA12 /* SceneDelegate.swift */,
 				1EFA40992A2B90A7008CAA12 /* ViewController.swift */,
+				1EFA40B12A2B9A99008CAA12 /* AboutAppViewController.swift */,
 				1EFA409B2A2B90A7008CAA12 /* Main.storyboard */,
 				1EFA409E2A2B90A9008CAA12 /* Assets.xcassets */,
 				1EFA40A02A2B90A9008CAA12 /* LaunchScreen.storyboard */,
 				1EFA40A32A2B90A9008CAA12 /* Info.plist */,
+				1EFA40A92A2B90D0008CAA12 /* Board.swift */,
+				1EFA40AB2A2B90E6008CAA12 /* Game.swift */,
+				1EFA40AD2A2B90FD008CAA12 /* BoardView.swift */,
+				1EFA40AF2A2B9118008CAA12 /* UIView.swift */,
 			);
 			path = ChessELO;
 			sourceTree = "<group>";
@@ -139,7 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EFA409A2A2B90A7008CAA12 /* ViewController.swift in Sources */,
+				1EFA40AC2A2B90E6008CAA12 /* Game.swift in Sources */,
+				1EFA40B22A2B9A99008CAA12 /* AboutAppViewController.swift in Sources */,
 				1EFA40962A2B90A7008CAA12 /* AppDelegate.swift in Sources */,
+				1EFA40B02A2B9118008CAA12 /* UIView.swift in Sources */,
+				1EFA40AE2A2B90FD008CAA12 /* BoardView.swift in Sources */,
+				1EFA40AA2A2B90D0008CAA12 /* Board.swift in Sources */,
 				1EFA40982A2B90A7008CAA12 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,21 +310,24 @@
 				DEVELOPMENT_TEAM = A8DD9HJC4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChessELO/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.strategy-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = yeskendiriskakov.kz.ChessELO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,21 +341,24 @@
 				DEVELOPMENT_TEAM = A8DD9HJC4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChessELO/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.strategy-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = yeskendiriskakov.kz.ChessELO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
